@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<parameter name="device_id" value="98895a43474d414537" />
+		<parameter name="device_name" value="myDroid" />
+		<classes>
+			<class name="com.techmahindra.automation.IMBS.Test_Msg" />
+
+		</classes>
+	</test>
+
+	<!-- Test -->
+</suite> <!-- Suite -->
