@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import com.imbs.base.SetUpDevices;
 import com.imbs.pages.Messages;
 
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
@@ -42,17 +43,19 @@ public class Test_Msg extends SetUpDevices {
 		}
 		msg.ok_Button.click();
 		msg.recipient.sendKeys("4253295854");
-		msg.recipient.submit();
-		try {
-			driver.wait(1000);
+//		msg.recipient.submit();
+//		try {
+//			driver.wait(1000);
+//			TouchAction touch = new TouchAction(driver);
+//		    driver.performTouchAction(touch).tap(msg.msg_Body);
 		msg.msg_Body.click();
 		msg.msg_Body.sendKeys("Hello world");
 		msg.msg_Body.submit();
 		msg.send_Button.click();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 //		msg.msg_Body.click();
 //		msg.msg_Body.sendKeys("Hello world");
 //		msg.msg_Body.submit();
